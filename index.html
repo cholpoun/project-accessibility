@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Don't forget to change the title and connect the CSS file -->
+    <title>Aurora</title>
+
+    <!-- h1 font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+
+    <!-- font for the text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<!-- Don't forget to connect the JavaScript file -->
+
+<body>
+    <header class="hero">
+        <div class="hero-h1">
+            <h1>Aurora</h1>
+            <h2></h2>
+        </div>
+    </header>
+    <section class="movie-library">
+
+        <!-- Filter and Sorting Controls -->
+        <div class="controls">
+            <!-- Filter Section -->
+            <div class="filter">
+                <h3>Browse by Genre</h3>
+                <div id="filterOptions">
+
+                    <button class="filter-btn" id="all-btn">All Genres</button>
+                    <button class="filter-btn" id="action-btn">Action</button>
+                    <button class="filter-btn" id="comedy-btn">Comedy</button>
+                    <button class="filter-btn" id="drama-btn">Drama</button>
+                    <button class="filter-btn" id="sci-fi-btn">Sci-Fi</button>
+                </div>
+            </div>
+
+
+
+            <select id="filterDropdown">
+                <option value="all">All Movies</option>
+                <option value="title">Title</option> <!--Alphabetical-->
+                <option value="director">Director</option> <!--Alphabetical-->
+                <option value="year">Year</option> <!--From latest to oldest-->
+                <option value="rating">Rating</option> <!--highest to lowest-->
+            </select>
+
+
+
+    </section>
+
+
+    <!-- Movie Cards (grid) -->
+    <section class="container" id="container">
+    </section>
+
+    <!-- Random Movie Button and Container for dysplaying chosen random movie -->
+    <section class="random-box">
+        <div class="randomMovieButtonBox">
+            <h2>Let Fate Choose Your Movie!</h2>
+            <button class="random-btn" id="random-btn">Surpise Me!</button>
+        </div>
+
+        <div class="randomMovieContainer" id="randomMovieContainer"></div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+
+
+</html>
