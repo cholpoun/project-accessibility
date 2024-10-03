@@ -5,31 +5,34 @@
 }
 
 body {
-    background-color: #f8f9fc;
-    font-family: "Comic Neue", cursive, sans-serif;
+    background-color: #F5EFFF;
+    font-family: "Afacad Flux", sans-serif;
 }
 
-.comic-neue-regular {
-    font-family: "Comic Neue", cursive, sans-serif;
-    font-weight: 400;
+
+.afacad-flux {
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600px;
     font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
 }
 
 .hero {
-    background-image: url(https://img.freepik.com/free-photo/flat-lay-composition-cinema-objects_23-2148115817.jpg?t=st=1726863116~exp=1726866716~hmac=0c291a0ac5f6c25ec8fcb79ea0d15c33c7414def5dc7a0415ccfdf592c6722a0&w=826);
     background-size: cover;
     background-position: center;
-    height: 350px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(7, 7, 7);
 }
 
 .hero-h1 {
     padding: 20px;
-    font-family: "Fascinate Inline", cursive, sans-serif;
+    font-family: "Afacad Flux", sans-serif;
     text-align: center;
 }
 
@@ -42,31 +45,61 @@ body {
 
 h1 {
     font-size: 70px;
-    color: white;
-    font-family: "Fascinate Inline", cursive, sans-serif;
+    color: rgb(18, 18, 18);
+    font-family: "Afacad Flux", sans-serif;
 }
 
-.fascinate-inline-regular {
-    font-family: "Fascinate Inline", cursive, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 .navbar {
     display: grid;
     justify-content: space-around;
     margin-bottom: 2dv;
+    font-family: "Afacad Flux", sans-serif;
 }
+
 
 .nav-links li {
     display: inline;
-    margin: 20px;
     font-size: 18px;
 }
 
 
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2a2828;
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #F1D3CE;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 body {
-    font-family: "Comic Neue", cursive, sans-serif;
+    font-family: "Afacad Flux", sans-serif;
 }
 
 .wedding-guest-section {
@@ -80,7 +113,7 @@ body {
 }
 
 .wedding-guest-section p {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 20px;
     color: #555;
 }
@@ -109,8 +142,6 @@ body {
     font-weight: bold;
 }
 
-
-
 .controls {
     display: grid;
     justify-content: space-around;
@@ -130,7 +161,7 @@ select {
     padding: 8px 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-family: "Comic Neue", cursive;
+    font-family: "Afacad Flux", sans-serif;
     font-weight: 900;
     width: 50%;
     margin: 25px auto;
@@ -157,7 +188,7 @@ h2 {
     margin: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-family: "Comic Neue", cursive;
+    font-family: "Afacad Flux", sans-serif;
     font-weight: 900;
     font-size: 18px;
 }
@@ -170,50 +201,8 @@ h2 {
     background-color: #d2f3c9;
 }
 
-.random-btn {
-    background-color: #c5412d;
-    border: none;
-    border-radius: 20px;
-    padding: 8px 15px;
-    margin: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    color: white;
-    transition: background-color 0.3s ease;
-    font-family: "Comic Neue", cursive;
-    font-weight: 900;
-    font-size: 24px;
-}
 
-.random-btn:hover {
-    background-color: #cc3016;
-}
 
-.random-box {
-    background: white;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 90%;
-    padding: 20px 10px;
-}
-
-.randomMovieButtonBox {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-}
-
-.randomMovieContainer {
-    margin-top: 20px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    margin: 0 auto;
-    flex-direction: column;
-    border-radius: 15px;
-}
 
 .container {
     display: grid;
@@ -229,8 +218,6 @@ h2 {
 .card {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    border: 1px solid #ddd;
     border-radius: 15px;
     width: 80%;
     padding: 10px;
@@ -315,9 +302,9 @@ h4 {
 
 
 .footer {
-    background-color: #b6761c;
+    background-color: #CDC1FF;
     padding: 40px 20px;
-    font-family: Arial, sans-serif;
+    font-family: "Afacad Flux", sans-serif;
     color: #333;
     text-align: center;
 }
@@ -351,7 +338,7 @@ h4 {
 .footer-links {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .footer-column ul {

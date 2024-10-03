@@ -15,7 +15,7 @@ const DRESSES = [
         colors: 2,
         availability: 'Quick add',
         sizes: ['EU 30', 'EU 32', 'EU 34', 'EU 36', 'EU 38', 'EU 40', 'EU 42'],
-        img: 'https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_2.0/w_600/PRD-SFCC/1316526/BLACK/1316526.1.BLACK?_s=RAABAB0'
+        img: 'https://media.thereformation.com/image/list/fn_select:jq:first(.%5B%5D%7Cif%20has(%22metadata%22)%20then%20select(any(.metadata%5B%5D;%20.external_id%20==%20%22sfcc-gallery-position%22%20and%20.value%20==%202))%20else%20empty%20end)/f_auto,q_auto,dpr_1.0/w_600/1316495-DMH.json?_s=RAAB'
     },
     {
         title: 'Katalina Dress - Grand Dame',
