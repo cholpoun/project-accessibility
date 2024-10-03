@@ -52,6 +52,100 @@ h1 {
     font-style: normal;
 }
 
+.navbar {
+    display: grid;
+    justify-content: space-around;
+    margin-bottom: 2dv;
+}
+
+.nav-links {}
+
+
+.nav-links li {
+    display: inline;
+    margin: 10px;
+}
+
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+#search-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #218838;
+}
+
+
+body {
+    font-family: "Comic Neue", cursive, sans-serif;
+}
+
+.wedding-guest-section {
+    text-align: center;
+    padding: 10px;
+}
+
+.wedding-guest-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.wedding-guest-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.dresses-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.dress-item {
+    text-align: center;
+    width: 150px;
+}
+
+.dress-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.dress-item p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
 .controls {
     display: grid;
     justify-content: space-around;
@@ -77,9 +171,7 @@ select {
     margin: 25px auto;
     padding-left: 20px;
     font-size: 18px;
-
 }
-
 
 h3 {
     margin-bottom: 10px;
@@ -164,6 +256,8 @@ h2 {
     gap: 10px;
     justify-items: center;
     margin: 0% auto;
+    width: 80%;
+    /* Adjust container width to make it smaller */
 }
 
 .card {
@@ -172,11 +266,13 @@ h2 {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 15px;
-    width: 100%;
+    width: 80%;
+    /* Adjust card width to make it smaller */
     padding: 10px;
     text-align: left;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
+    margin: 0 auto;
 }
 
 .card:hover {
@@ -185,12 +281,12 @@ h2 {
 
 .card img {
     width: 100%;
-    height: 450px;
+    height: 300px;
+    /* Reduce image height */
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
 }
-
 
 p {
     margin: 5px 0;
@@ -213,11 +309,10 @@ h4 {
     }
 
     .card img {
-        height: 330px;
+        height: 250px;
         width: 100%;
         margin: 0 auto;
     }
-
 
     .randomMovieContainer {
         margin-top: 20px;
@@ -248,7 +343,7 @@ h4 {
     }
 
     .card img {
-        height: 375px;
+        height: 275px;
         object-fit: cover;
     }
 }

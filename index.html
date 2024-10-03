@@ -26,13 +26,76 @@
 <!-- Don't forget to connect the JavaScript file -->
 
 <body>
+
+
     <header class="hero">
         <div class="hero-h1">
             <h1>Aurora</h1>
-            <h2></h2>
+        </div>
+
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li>New</li>
+                <li>Clothing</li>
+                <li>Dresses</li>
+                <li>Tops</li>
+                <li>Jeans</li>
+                <li>Sweaters</li>
+                <li>Weddings</li>
+                <li>Shoes</li>
+                <li>Bags</li>
+                <li>Edits</li>
+                <li>Sustainability</li>
+            </ul>
+        </nav>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button type="button" id="search-button">Search</button>
         </div>
     </header>
     <section class="movie-library">
+
+
+        <div class="wedding-guest-section">
+            <h2>Wedding Guest Dresses</h2>
+            <p>In case of being the best dressed guest. Wedding guest dresses are right here.</p>
+
+            <div class="dresses-container">
+                <div class="dress-item">
+                    <img src="https://media.thereformation.com/image/list/fn_select:jq:first(.%5B%5D%7Cif%20has(%22metadata%22)%20then%20select(any(.metadata%5B%5D;%20.external_id%20==%20%22sfcc-gallery-position%22%20and%20.value%20==%202))%20else%20empty%20end)/f_auto,q_auto,dpr_2.0/w_600/1316493-CHN.json?_s=RAABAB0"
+                        alt="Black Tie">
+                    <p>Black Tie</p>
+                </div>
+                <div class="dress-item">
+                    <img src="https://media.thereformation.com/image/list/fn_select:jq:first(.%5B%5D%7Cif%20has(%22metadata%22)%20then%20select(any(.metadata%5B%5D;%20.external_id%20==%20%22sfcc-gallery-position%22%20and%20.value%20==%202))%20else%20empty%20end)/f_auto,q_auto,dpr_2.0/w_600/1312571-PTN.json?_s=RAABAB0"
+                        alt="Bra-friendly">
+                    <p>Bra-friendly</p>
+                </div>
+                <div class="dress-item">
+                    <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_2.0/w_600/PRD-SFCC/1316847/CHOCOLATE_SEQUIN/1316847.2.CHOCOLATE_SEQUIN?_s=RAABAB0"
+                        alt="Bridesmaids">
+                    <p>Bridesmaids</p>
+                </div>
+                <div class="dress-item">
+                    <img src="https://media.thereformation.com/image/list/fn_select:jq:first(.%5B%5D%7Cif%20has(%22metadata%22)%20then%20select(any(.metadata%5B%5D;%20.external_id%20==%20%22sfcc-gallery-position%22%20and%20.value%20==%202))%20else%20empty%20end)/f_auto,q_auto,dpr_2.0/w_600/1314260-AEV.json?_s=RAABAB0"
+                        alt="Green Dresses">
+                    <p>Green Dresses</p>
+                </div>
+                <div class="dress-item">
+                    <img src="https://media.thereformation.com/image/list/fn_select:jq:first(.%5B%5D%7Cif%20has(%22metadata%22)%20then%20select(any(.metadata%5B%5D;%20.external_id%20==%20%22sfcc-gallery-position%22%20and%20.value%20==%202))%20else%20empty%20end)/f_auto,q_auto,dpr_2.0/w_600/1316063-BLK.json?_s=RAABAB0"
+                        alt="Black Dresses">
+                    <p>Black Dresses</p>
+                </div>
+                <div class="dress-item">
+                    <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_2.0/w_600/PRD-SFCC/1315672/GOLDEN_HAZE_LEATHER/1315672.1.GOLDEN_HAZE_LEATHER?_s=RAABAB0"
+                        alt="Occasion Shoes">
+                    <p>Occasion Shoes</p>
+                </div>
+            </div>
+        </div>
+
+
 
         <!-- Filter and Sorting Controls -->
         <div class="controls">
@@ -48,6 +111,8 @@
                     <button class="filter-btn" id="sci-fi-btn">Sci-Fi</button>
                 </div>
             </div>
+
+
 
 
 
