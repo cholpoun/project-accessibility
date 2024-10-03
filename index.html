@@ -34,25 +34,23 @@
         </div>
 
         <nav class="navbar">
-            <ul class="nav-links">
-                <li>New</li>
-                <li>Clothing</li>
-                <li>Dresses</li>
-                <li>Tops</li>
-                <li>Jeans</li>
-                <li>Sweaters</li>
-                <li>Weddings</li>
-                <li>Shoes</li>
-                <li>Bags</li>
-                <li>Edits</li>
-                <li>Sustainability</li>
-            </ul>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li>New</li>
+                    <li>Clothing</li>
+                    <li>Dresses</li>
+                    <li>Tops</li>
+                    <li>Jeans</li>
+                    <li>Sweaters</li>
+                    <li>Weddings</li>
+                    <li>Shoes</li>
+                    <li>Bags</li>
+                    <li>Edits</li>
+                    <li>Sustainability</li>
+                </ul>
+            </div>
         </nav>
 
-        <div class="search-bar">
-            <input type="text" id="search-input" placeholder="Search...">
-            <button type="button" id="search-button">Search</button>
-        </div>
     </header>
     <section class="movie-library">
 
@@ -96,34 +94,18 @@
         </div>
 
 
-
         <!-- Filter and Sorting Controls -->
         <div class="controls">
-            <!-- Filter Section -->
-            <div class="filter">
-                <h3>Browse by Genre</h3>
-                <div id="filterOptions">
 
-                    <button class="filter-btn" id="all-btn">All Genres</button>
-                    <button class="filter-btn" id="action-btn">Action</button>
-                    <button class="filter-btn" id="comedy-btn">Comedy</button>
-                    <button class="filter-btn" id="drama-btn">Drama</button>
-                    <button class="filter-btn" id="sci-fi-btn">Sci-Fi</button>
-                </div>
-            </div>
+        </div>
 
 
 
-
-
-            <select id="filterDropdown">
-                <option value="all">All Movies</option>
-                <option value="title">Title</option> <!--Alphabetical-->
-                <option value="director">Director</option> <!--Alphabetical-->
-                <option value="year">Year</option> <!--From latest to oldest-->
-                <option value="rating">Rating</option> <!--highest to lowest-->
-            </select>
-
+        <select id="filterDropdown">
+            <option value="title">Sort by Title</option>
+            <option value="price">Sort by Price</option>
+            <option value="colors">Sort by Colors</option>
+        </select>
 
 
     </section>
@@ -133,17 +115,89 @@
     <section class="container" id="container">
     </section>
 
-    <!-- Random Movie Button and Container for dysplaying chosen random movie -->
-    <section class="random-box">
-        <div class="randomMovieButtonBox">
-            <h2>Let Fate Choose Your Movie!</h2>
-            <button class="random-btn" id="random-btn">Surpise Me!</button>
-        </div>
-
-        <div class="randomMovieContainer" id="randomMovieContainer"></div>
-    </section>
 
     <script src="script.js"></script>
+
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-section">
+                <img src="https://cdn-icons-png.flaticon.com/128/1585/1585176.png" alt="Free Shipping Icon">
+                <h4>Free shipping</h4>
+                <p>Oh, and we updated our return policy</p>
+            </div>
+            <div class="footer-section">
+                <img src="https://cdn-icons-png.flaticon.com/128/3425/3425077.png" alt="Stores Icon">
+                <h4>Aurora stores</h4>
+                <p>We’re all over the place</p>
+            </div>
+            <div class="footer-section">
+                <img src="https://cdn-icons-png.flaticon.com/128/3075/3075987.png" alt="Climate Action Icon">
+                <h4>We’re committed to climate action</h4>
+                <p>And we have big plans</p>
+            </div>
+            <div class="footer-section">
+                <img src="https://cdn-icons-png.flaticon.com/128/950/950299.png" alt="Customer Love Icon">
+                <h4>Customer love</h4>
+                <p>We got you via email or text</p>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <div class="footer-column">
+                <ul>
+                    <li>About Ref</li>
+                    <li>Stores</li>
+                    <li>Careers</li>
+                    <li>Affiliates</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li>Contact</li>
+                    <li>FAQ</li>
+                    <li>Size guide</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li>Sign in</li>
+                    <li>Returns & Exchanges</li>
+                    <li>Order lookup</li>
+                    <li>E-gift cards</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>Pinterest</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-subscribe">
+            <form action="#" method="post">
+                <input type="text" placeholder="We make great emails" class="subscribe-input">
+                <button type="submit" class="subscribe-btn">Sign up</button>
+            </form>
+        </div>
+
+        <div class="footer-bottom">
+            <ul>
+                <li>Do Not Sell My Info</li>
+                <li>Terms</li>
+                <li>Privacy</li>
+                <li>California Privacy Notice</li>
+                <li>Sitemap</li>
+                <li>Accessibility</li>
+                <li>CA Supply Chain</li>
+            </ul>
+            <p>© 2024 Reformation</p>
+        </div>
+    </footer>
+
+
 
 </body>
 
