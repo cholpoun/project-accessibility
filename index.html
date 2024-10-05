@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Connect to the CSS file -->
     <link rel="stylesheet" href="style.css">
 
     <title>Aurora</title>
-    <!-- Font  -->
+
+    <!-- Font import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,181 +16,191 @@
         rel="stylesheet">
 </head>
 
-
 <body>
 
-    <header class="hero">
+    <header class="hero" role="header">
         <div class="hero-h1">
             <h1>Aurora</h1>
         </div>
 
-        <nav class="navbar">
-            <div class="nav-container">
+        <nav class="navbar" aria-label="Main Navigation">
+            <button class="hamburger-menu" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-links">
                 <ul class="nav-links">
-                    <li><a href="https://salk.se/">New</a></li>
-                    <li><a href="https://salk.se/">Clothing</a></li>
-                    <li><a href="https://salk.se/">Dresses</a></li>
-                    <li><a href="https://salk.se/">Tops</a></li>
-                    <li><a href="https://salk.se/">Jeans</a></li>
-                    <li><a href="https://salk.se/">Sweaters</a></li>
-                    <li><a href="https://salk.se/">Weddings</a></li>
-                    <li><a href="https://salk.se/">Shoes</a></li>
-                    <li><a href="https://salk.se/">Bags</a></li>
-                    <li><a href="https://salk.se/">Edits</a></li>
-                    <li><a href="https://salk.se/">Sustainability</a></li>
+                    <li><a href="https://www.thereformation.com/new" aria-label="New Arrivals">New</a></li>
+                    <li><a href="https://www.thereformation.com/clothing" aria-label="Clothing Section">Clothing</a>
+                    </li>
+                    <li><a href="https://www.thereformation.com/dresses/" aria-label="Dresses Section">Dresses</a></li>
+                    <li><a href="https://www.thereformation.com/tops" aria-label="Tops Section">Tops</a></li>
+                    <li><a href="https://www.thereformation.com/jeans/" aria-label="Jeans Section">Jeans</a></li>
+                    <li><a href="https://www.thereformation.com/sweaters" aria-label="Sweaters Section">Sweaters</a>
+                    </li>
+                    <li><a href="https://www.thereformation.com/bridal" aria-label="Weddings Section">Weddings</a></li>
+                    <li><a href="https://www.thereformation.com/shoes" aria-label="Shoes Section">Shoes</a></li>
+                    <li><a href="https://www.thereformation.com/bags" aria-label="Bags Section">Bags</a></li>
+                    <li><a href="https://www.thereformation.com/sustainability.html"
+                            aria-label="Sustainability Section">Sustainability</a></li>
                 </ul>
-            </div>
         </nav>
     </header>
 
 
-
-    <div class="hero-image">
-        <img src="https://images.selfridges.com/is/image/selfridges/190708_ReformationArtboard_3_MOBILE?scl=1&qlt=60,1"
-            alt="Girl laying on the grass">
+    <div class="main-image">
+        <!-- <img src="https://images.selfridges.com/is/image/selfridges/190708_ReformationArtboard_3_MOBILE?scl=1&qlt=60,1" -->
+        <!-- alt="Woman in nature wearing Aurora brand clothing"> -->
         <div class="text-overlay">
             <h2>Why we all want to be wearing Aurora</h2>
-            <p>Good news: Aurora's sustainability team is good at science and 100% of our stuff recyclable.</p>
+            <p>Aurora's sustainability team is good at science, and 100% of our stuff is recyclable.</p>
+            <a href="https://www.selfridges.com/US/en/features/articles/selfridges-loves/ethical-clothing-reformation/"
+                class="btn-link" target="_blank" rel="noopener noreferrer"> Read our report </a>
+
         </div>
     </div>
 
-
-
-    <div class="container">
-        <h2>Being naked is the #1 most sustainable option. We're #2.</h2>
-        <div class="grid">
-            <div class="item">
-                <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_2.0/w_600/PRD-SFCC/1314547/MOREL/1314547.2.MOREL?_s=RAABAB0"
-                    alt="Red Dress">
-                <h3>Dresses</h3>
-            </div>
-            <div class="item">
-                <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_2.0/w_600/PRD-SFCC/1316165/CHIANTI/1316165.1.CHIANTI?_s=RAABAB0"
-                    alt="Essentials">
-                <h3>Essentials</h3>
-            </div>
-            <div class="item">
-                <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_2.0/w_600/PRD-SFCC/1313276/WHEAT/1313276.1.WHEAT?_s=RAABAB0"
-                    alt="The Fall Edit">
-                <h3>The Fall Edit</h3>
-            </div>
-            <div class="item">
-                <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_2.0/w_600/PRD-SFCC/1316409/KEILA/1316409.4.KEILA?_s=RAABAB0"
-                    alt="Hot Right Now">
-                <h3>Hot Right Now</h3>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="container 1"></div>
-    <div class="image-container">
-        <div class="image-left">
-            <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_auto/w_600/PRD-SFCC/1316674/CAMEL/1316674.2.CAMEL?_s=RAABAB0"
-                alt="Model standing by a fence">
-        </div>
-        <div class="image-right">
-            <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_auto/w_600/PRD-SFCC/1316322/CAMEL_NAVY/1316322.1.CAMEL_NAVY?_s=RAABAB0"
-                alt="Model with horse">
-            <div class="text-overlay">
-                <h2>Horse girl</h2>
-                <p>Great hair, yearning to break free</p>
+    <main>
+        <div class="container">
+            <h2>Being naked is the #1 most sustainable option. We're #2.</h2>
+            <div class="grid">
+                <div class="item">
+                    <a href="https://www.thereformation.com/dresses" target="_blank" rel="noopener noreferrer">
+                        <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_2.0/w_600/PRD-SFCC/1314547/MOREL/1314547.2.MOREL?_s=RAABAB0"
+                            alt="Red Dress by Aurora"></a>
+                    <h3> <a href="https://www.thereformation.com/dresses" target="_blank"
+                            rel="noopener noreferrer">Dresses</a></h3>
+                </div>
+                <div class="item">
+                    <a href="https://www.thereformation.com/collections/basics" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_2.0/w_600/PRD-SFCC/1316165/CHIANTI/1316165.1.CHIANTI?_s=RAABAB0"
+                            alt="Essential items by Aurora"> </a>
+                    <h3><a href="https://www.thereformation.com/collections/basics" target="_blank"
+                            rel="noopener noreferrer">Essentials</a></h3>
+                </div>
+                <div class="item">
+                    <a href="https://www.thereformation.com/collections/fall-essentials" target="blank"
+                        rel="noopener noreferrer">
+                        <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_2.0/w_600/PRD-SFCC/1313276/WHEAT/1313276.1.WHEAT?_s=RAABAB0"
+                            alt="The Fall Edit collection by Aurora"> </a>
+                    <h3> <a href="https://www.thereformation.com/collections/fall-essentials" target="blank"
+                            rel="noopener noreferrer">The Fall Edit</a></h3>
+                </div>
+                <div class="item">
+                    <a href="https://www.thereformation.com/collections/hot-right-now" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_2.0/w_600/PRD-SFCC/1316409/KEILA/1316409.4.KEILA?_s=RAABAB0"
+                            alt="Hot Right Now items by Aurora"></a>
+                    <h3> <a href="https://www.thereformation.com/collections/hot-right-now" target="_blank"
+                            rel="noopener noreferrer">Hot Right Now</a></h3>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
 
+        <div class="image-container">
+            <div class="image-left">
+                <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_auto/w_600/PRD-SFCC/1316674/CAMEL/1316674.2.CAMEL?_s=RAABAB0"
+                    alt="Model standing by a fence wearing Aurora clothing">
+                <div class="text-overlay">
+                    <h2>New This Week</h2>
+                    <p> <a href="https://www.thereformation.com/sweaters" target="_blank" rel="noopener noreferrer">Oh
+                            look. We made more cute stuff.</a></p>
+                </div>
 
-    <section class="container" id="container">
-    </section>
+            </div>
+            <div class="image-right">
+                <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_auto/w_600/PRD-SFCC/1316322/CAMEL_NAVY/1316322.1.CAMEL_NAVY?_s=RAABAB0"
+                    alt="Model with horse wearing Aurora clothing">
+                <div class="text-overlay">
+                    <h2>Horse girl</h2>
+                    <p> <a href="https://www.thereformation.com/new/this-weekGreat" target="_blank"
+                            rel="noopener noreferrer">Great hair, yearning to break free. </a></p>
+                </div>
+            </div>
+        </div>
+    </main>
 
-
-    <script src="script.js"></script>
-
-
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer-top">
             <div class="footer-section">
                 <img src="https://cdn-icons-png.flaticon.com/128/1585/1585176.png" alt="Free Shipping Icon">
                 <h4>Free shipping</h4>
-                <p>Oh, and we updated our return policy</p>
+                <p>We updated our return policy to make it even easier for you.</p>
             </div>
             <div class="footer-section">
                 <img src="https://cdn-icons-png.flaticon.com/128/3425/3425077.png" alt="Stores Icon">
                 <h4>Aurora stores</h4>
-                <p>We’re all over the place</p>
+                <p>Find us in a location near you.</p>
             </div>
             <div class="footer-section">
                 <img src="https://cdn-icons-png.flaticon.com/128/3075/3075987.png" alt="Climate Action Icon">
-                <h4>We’re committed to climate action</h4>
-                <p>And we have big plans</p>
+                <h4>Committed to climate action</h4>
+                <p>We have big plans for the future of sustainability.</p>
             </div>
             <div class="footer-section">
                 <img src="https://cdn-icons-png.flaticon.com/128/950/950299.png" alt="Customer Love Icon">
                 <h4>Customer love</h4>
-                <p>We got you via email or text</p>
+                <p>We're here to help via email or text anytime.</p>
             </div>
         </div>
 
         <div class="footer-links">
             <div class="footer-column">
                 <ul>
-                    <li>About Ref</li>
-                    <li>Stores</li>
-                    <li>Careers</li>
-                    <li>Affiliates</li>
+                    <li><a href="#">About Aurora</a></li>
+                    <li><a href="#">Stores</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Affiliates</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <ul>
-                    <li>Contact</li>
-                    <li>FAQ</li>
-                    <li>Size guide</li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Size guide</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <ul>
-                    <li>Sign in</li>
-                    <li>Returns & Exchanges</li>
-                    <li>Order lookup</li>
-                    <li>E-gift cards</li>
+                    <li><a href="#">Sign in</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">Order lookup</a></li>
+                    <li><a href="#">E-gift cards</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <ul>
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                    <li>Pinterest</li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Pinterest</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="footer-subscribe">
-            <form action="#" method="post">
-                <input type="text" placeholder="We make great emails" class="subscribe-input">
+            <form action="https://httpbin.org/anything" method="post">
+                <label for="subscribe-input" class="visually-hidden">Email Subscription</label>
+                <input type="email" id="subscribe-input" placeholder="Enter your email address" class="subscribe-input"
+                    aria-label="Enter your email address">
                 <button type="submit" class="subscribe-btn">Sign up</button>
             </form>
         </div>
 
         <div class="footer-bottom">
             <ul>
-                <li>Do Not Sell My Info</li>
-                <li>Terms</li>
-                <li>Privacy</li>
-                <li>California Privacy Notice</li>
-                <li>Sitemap</li>
-                <li>Accessibility</li>
-                <li>CA Supply Chain</li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Accessibility</a></li>
             </ul>
-            <p>© 2024 Reformation</p>
+            <p>© 2024 Aurora</p>
         </div>
     </footer>
 
-
-
+    <script src="script.js"></script>
 </body>
-
-
 
 </html>
