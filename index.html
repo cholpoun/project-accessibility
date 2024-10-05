@@ -5,124 +5,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
     <title>Aurora</title>
 
     <!-- Font import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Cinzel:wght@400..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Cinzel:wght@400..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header class="hero" role="header">
+    <!-- Accessible Header -->
+    <header class="hero" role="banner">
         <div class="hero-h1">
             <h1>Aurora</h1>
         </div>
 
+        <!-- Accessible Navbar -->
         <nav class="navbar" aria-label="Main Navigation">
-            <button class="hamburger-menu" aria-label="Toggle Navigation">
+            <button class="hamburger-menu" aria-expanded="false" aria-controls="main-navigation" aria-label="Toggle Navigation">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
 
-            <ul class="nav-links">
-                <ul class="nav-links">
-                    <li><a href="https://www.thereformation.com/new" aria-label="New Arrivals">New</a></li>
-                    <li><a href="https://www.thereformation.com/clothing" aria-label="Clothing Section">Clothing</a>
-                    </li>
-                    <li><a href="https://www.thereformation.com/dresses/" aria-label="Dresses Section">Dresses</a></li>
-                    <li><a href="https://www.thereformation.com/tops" aria-label="Tops Section">Tops</a></li>
-                    <li><a href="https://www.thereformation.com/jeans/" aria-label="Jeans Section">Jeans</a></li>
-                    <li><a href="https://www.thereformation.com/sweaters" aria-label="Sweaters Section">Sweaters</a>
-                    </li>
-                    <li><a href="https://www.thereformation.com/bridal" aria-label="Weddings Section">Weddings</a></li>
-                    <li><a href="https://www.thereformation.com/shoes" aria-label="Shoes Section">Shoes</a></li>
-                    <li><a href="https://www.thereformation.com/bags" aria-label="Bags Section">Bags</a></li>
-                    <li><a href="https://www.thereformation.com/sustainability.html"
-                            aria-label="Sustainability Section">Sustainability</a></li>
-                </ul>
+            <ul class="nav-links" id="main-navigation">
+                <li><a href="https://www.thereformation.com/new" aria-label="New Arrivals">New</a></li>
+                <li><a href="https://www.thereformation.com/clothing" aria-label="Clothing Section">Clothing</a></li>
+                <li><a href="https://www.thereformation.com/dresses/" aria-label="Dresses Section">Dresses</a></li>
+                <li><a href="https://www.thereformation.com/tops" aria-label="Tops Section">Tops</a></li>
+                <li><a href="https://www.thereformation.com/jeans/" aria-label="Jeans Section">Jeans</a></li>
+                <li><a href="https://www.thereformation.com/sweaters" aria-label="Sweaters Section">Sweaters</a></li>
+                <li><a href="https://www.thereformation.com/bridal" aria-label="Weddings Section">Weddings</a></li>
+                <li><a href="https://www.thereformation.com/shoes" aria-label="Shoes Section">Shoes</a></li>
+                <li><a href="https://www.thereformation.com/bags" aria-label="Bags Section">Bags</a></li>
+                <li><a href="https://www.thereformation.com/sustainability.html" aria-label="Sustainability Section">Sustainability</a></li>
+            </ul>
         </nav>
     </header>
 
-
-    <div class="main-image">
-        <!-- <img src="https://images.selfridges.com/is/image/selfridges/190708_ReformationArtboard_3_MOBILE?scl=1&qlt=60,1" -->
-        <!-- alt="Woman in nature wearing Aurora brand clothing"> -->
-        <div class="text-overlay">
-            <h2>Why we all want to be wearing Aurora</h2>
-            <p>Aurora's sustainability team is good at science, and 100% of our stuff is recyclable.</p>
-            <a href="https://www.selfridges.com/US/en/features/articles/selfridges-loves/ethical-clothing-reformation/"
-                class="btn-link" target="_blank" rel="noopener noreferrer"> Read our report </a>
-
-        </div>
-    </div>
-
+    <!-- Accessible Main Content -->
     <main>
-        <div class="container">
+        <section class="main-image" aria-labelledby="main-heading">
+            <!-- Image needs an alt text for accessibility -->
+            <img src="https://images.selfridges.com/is/image/selfridges/190708_ReformationArtboard_3_MOBILE?scl=1&qlt=60,1" alt="Woman in nature wearing Aurora brand clothing">
+            <div class="text-overlay">
+                <h2 id="main-heading">Why we all want to be wearing Aurora</h2>
+                <p>Aurora's sustainability team is good at science, and 100% of our stuff is recyclable.</p>
+                <a href="https://www.selfridges.com/US/en/features/articles/selfridges-loves/ethical-clothing-reformation/" class="btn-link" target="_blank" rel="noopener noreferrer"> Read our report </a>
+            </div>
+        </section>
+
+        <section class="container">
             <h2>Being naked is the #1 most sustainable option. We're #2.</h2>
             <div class="grid">
                 <div class="item">
                     <a href="https://www.thereformation.com/dresses" target="_blank" rel="noopener noreferrer">
-                        <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_2.0/w_600/PRD-SFCC/1314547/MOREL/1314547.2.MOREL?_s=RAABAB0"
-                            alt="Red Dress by Aurora"></a>
-                    <h3> <a href="https://www.thereformation.com/dresses" target="_blank"
-                            rel="noopener noreferrer">Dresses</a></h3>
+                        <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_2.0/w_600/PRD-SFCC/1314547/MOREL/1314547.2.MOREL?_s=RAABAB0" alt="Red Dress by Aurora">
+                    </a>
+                    <h3><a href="https://www.thereformation.com/dresses" target="_blank" rel="noopener noreferrer">Dresses</a></h3>
                 </div>
                 <div class="item">
-                    <a href="https://www.thereformation.com/collections/basics" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_2.0/w_600/PRD-SFCC/1316165/CHIANTI/1316165.1.CHIANTI?_s=RAABAB0"
-                            alt="Essential items by Aurora"> </a>
-                    <h3><a href="https://www.thereformation.com/collections/basics" target="_blank"
-                            rel="noopener noreferrer">Essentials</a></h3>
+                    <a href="https://www.thereformation.com/collections/basics" target="_blank" rel="noopener noreferrer">
+                        <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_2.0/w_600/PRD-SFCC/1316165/CHIANTI/1316165.1.CHIANTI?_s=RAABAB0" alt="Essential items by Aurora">
+                    </a>
+                    <h3><a href="https://www.thereformation.com/collections/basics" target="_blank" rel="noopener noreferrer">Essentials</a></h3>
                 </div>
                 <div class="item">
-                    <a href="https://www.thereformation.com/collections/fall-essentials" target="blank"
-                        rel="noopener noreferrer">
-                        <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_2.0/w_600/PRD-SFCC/1313276/WHEAT/1313276.1.WHEAT?_s=RAABAB0"
-                            alt="The Fall Edit collection by Aurora"> </a>
-                    <h3> <a href="https://www.thereformation.com/collections/fall-essentials" target="blank"
-                            rel="noopener noreferrer">The Fall Edit</a></h3>
+                    <a href="https://www.thereformation.com/collections/fall-essentials" target="_blank" rel="noopener noreferrer">
+                        <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_2.0/w_600/PRD-SFCC/1313276/WHEAT/1313276.1.WHEAT?_s=RAABAB0" alt="The Fall Edit collection by Aurora">
+                    </a>
+                    <h3><a href="https://www.thereformation.com/collections/fall-essentials" target="_blank" rel="noopener noreferrer">The Fall Edit</a></h3>
                 </div>
                 <div class="item">
-                    <a href="https://www.thereformation.com/collections/hot-right-now" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_2.0/w_600/PRD-SFCC/1316409/KEILA/1316409.4.KEILA?_s=RAABAB0"
-                            alt="Hot Right Now items by Aurora"></a>
-                    <h3> <a href="https://www.thereformation.com/collections/hot-right-now" target="_blank"
-                            rel="noopener noreferrer">Hot Right Now</a></h3>
+                    <a href="https://www.thereformation.com/collections/hot-right-now" target="_blank" rel="noopener noreferrer">
+                        <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_2.0/w_600/PRD-SFCC/1316409/KEILA/1316409.4.KEILA?_s=RAABAB0" alt="Hot Right Now items by Aurora">
+                    </a>
+                    <h3><a href="https://www.thereformation.com/collections/hot-right-now" target="_blank" rel="noopener noreferrer">Hot Right Now</a></h3>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="image-container">
+        <section class="image-container">
             <div class="image-left">
-                <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_auto/w_600/PRD-SFCC/1316674/CAMEL/1316674.2.CAMEL?_s=RAABAB0"
-                    alt="Model standing by a fence wearing Aurora clothing">
+                <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_auto/w_600/PRD-SFCC/1316674/CAMEL/1316674.2.CAMEL?_s=RAABAB0" alt="Model standing by a fence wearing Aurora clothing">
                 <div class="text-overlay">
                     <h2>New This Week</h2>
-                    <p> <a href="https://www.thereformation.com/sweaters" target="_blank" rel="noopener noreferrer">Oh
-                            look. We made more cute stuff.</a></p>
+                    <p><a href="https://www.thereformation.com/sweaters" target="_blank" rel="noopener noreferrer">Oh look. We made more cute stuff.</a></p>
                 </div>
-
             </div>
             <div class="image-right">
-                <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_auto/w_600/PRD-SFCC/1316322/CAMEL_NAVY/1316322.1.CAMEL_NAVY?_s=RAABAB0"
-                    alt="Model with horse wearing Aurora clothing">
+                <img src="https://media.thereformation.com/image/upload/f_auto,q_auto,dpr_auto/w_600/PRD-SFCC/1316322/CAMEL_NAVY/1316322.1.CAMEL_NAVY?_s=RAABAB0" alt="Model with horse wearing Aurora clothing">
                 <div class="text-overlay">
                     <h2>Horse girl</h2>
-                    <p> <a href="https://www.thereformation.com/new/this-weekGreat" target="_blank"
-                            rel="noopener noreferrer">Great hair, yearning to break free. </a></p>
+                    <p><a href="https://www.thereformation.com/new/this-weekGreat" target="_blank" rel="noopener noreferrer">Great hair, yearning to break free.</a></p>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
+    <!-- Accessible Footer -->
     <footer class="footer" role="contentinfo">
         <div class="footer-top">
             <div class="footer-section">
@@ -183,8 +165,7 @@
         <div class="footer-subscribe">
             <form action="https://httpbin.org/anything" method="post">
                 <label for="subscribe-input" class="visually-hidden">Email Subscription</label>
-                <input type="email" id="subscribe-input" placeholder="Enter your email address" class="subscribe-input"
-                    aria-label="Enter your email address">
+                <input type="email" id="subscribe-input" placeholder="Enter your email address" class="subscribe-input" aria-label="Enter your email address">
                 <button type="submit" class="subscribe-btn">Sign up</button>
             </form>
         </div>
@@ -199,8 +180,7 @@
             <p>© 2024 Aurora</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
+ <script src="script.js"></script>
 </body>
 
 </html>
