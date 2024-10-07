@@ -161,13 +161,15 @@
             </div>
         </div>
 
-        <div class="footer-subscribe">
-            <form action="https://httpbin.org/anything" method="post">
-                <label for="subscribe-input" class="visually-hidden">Email Subscription</label>
-                <input type="email" id="subscribe-input" placeholder="Enter your email address" class="subscribe-input" aria-label="Enter your email address">
-                <button type="submit" class="subscribe-btn">Sign up</button>
-            </form>
-        </div>
+       <div class="footer-subscribe" role="form" aria-labelledby="subscribe-label">
+    <form action="https://httpbin.org/anything" method="post">
+        <label id="subscribe-label" for="subscribe-input">Subscribe to our newsletter</label>
+        <input type="email" id="subscribe-input" placeholder="Enter your email address" class="subscribe-input"
+            aria-label="Enter your email address" required>
+        <button type="submit" class="subscribe-btn" aria-label="Sign up for the newsletter">Sign up</button>
+    </form>
+</div>
+
 
         <div class="footer-bottom">
             <ul>
