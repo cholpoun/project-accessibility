@@ -270,18 +270,25 @@ h4 {
 .subscribe-input {
     padding: 10px;
     width: 250px;
-    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #000000;
+    border: 2px solid #000000;
     border-radius: 5px;
 }
 
 .subscribe-btn {
     padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
     border-radius: 5px;
     cursor: pointer;
     margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: #333333;
 }
 
 .footer-bottom {
