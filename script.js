@@ -6,6 +6,7 @@ hamburgerMenu.addEventListener('click', () => {
     const expanded = hamburgerMenu.getAttribute('aria-expanded') === 'true';
     hamburgerMenu.setAttribute('aria-expanded', !expanded);
     document.body.classList.toggle('menu-open');
+    hamburgerMenu.classList.toggle('menu-open');
 });
 
 navLinks.addEventListener('click', (event) => {
@@ -13,5 +14,6 @@ navLinks.addEventListener('click', (event) => {
         navLinks.classList.remove('active');
         hamburgerMenu.setAttribute('aria-expanded', 'false');
         document.body.classList.remove('menu-open');
+        hamburgerMenu.classList.remove('menu-open');
     }
 });
